@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineFlow Creator Registration</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Join the CineFlow Creator Program</h1>
+        <form action="#" method="post" enctype="multipart/form-data">
+            <section id="promo">
+                <h2> Welcome video</h2>
+                <video src="Assets/VIDEOS/Advert.mp4" controls width="400" height="400">
+                    Your browser does not support the video tag.
+                    
+                </video>
+            </section>
+            
+            <div id="registration">
+                <form action="/submit-registration" method="POST" enctype="multipart/form-data"></form>
+                <label for="username">username:</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username" required minlength="3">
+            </div>
+             <div class="Form group">
+                <label for="email">Email (required):</label>
+                <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+            </div>
+            <div class="Form group">
+                <label for="password" >password (required):</label>
+                <input type="password" id="password" placeholder="********" required>
+            </div>
+            <div class="Form group">
+                <label for="confirm_password">confirm password (required):</label>
+                <input type="password" id="confirm_password" placeholder="********" required>
+            </div>
+                <div class="Form group">
+                    <lable for="date of birth">date of birth (required):</lable>
+                    <input type="date" id="date of birth" name="date of birth" required placeholder="must be 18 years">
+                </div>
+                <div class="form group"> 
+                    <label for="Expected weekly upload">Expected weekly upload (0 - 10):</label>
+                    <input type="number" id="Expected weekly upload" name="Expected weekly upload">
+                </div>
+                <div class="selection-container">
+                     <label class="selection-item">
+                        <input type="radio" name="Content genre" value="field" required> Tech
+                    </label>
+                    <label class="selection-item">
+                        <input type="radio" name="Content genre" value="field"> Lifestyle
+                    </label>
+                    <label class="selection-item">
+                        <input type="radio" name="Content genre" value="field"> Gaming
+                    </label>
+                </div> 
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+         </form>
+     </div>
+</body>
+</html>
